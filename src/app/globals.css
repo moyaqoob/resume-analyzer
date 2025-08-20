@@ -6,6 +6,7 @@
   --font-mona-sans: "Mona Sans", sans-serif;
   --font-robo: "Roboto Condensed", sans-serif;
   --font-noto: "Noto Sans", sans-serif;
+  --cursor:url('/images/cursor.png')
 }
 
 @theme inline {
@@ -56,6 +57,7 @@ body {
   color: var(--foreground);
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;
 }
+
 @utility bg-gradient {
  background: linear-gradient(to bottom, #f0f4ff 60%, #fa7185cc);
 }

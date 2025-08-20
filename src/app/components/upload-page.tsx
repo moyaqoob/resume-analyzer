@@ -25,6 +25,30 @@ export const UploadPage = () => {
           Drop your resume for an ATS score and improvement tips
         </p>
       </div>
+
+      <div className="flex items-center flex-col">
+        <div>
+          <label>Company name</label>
+          <input className="w-1/2" placeholder="Enter the company name" />
+        </div>
+
+        <div>
+          <label>Job Title</label>
+          <input className="" placeholder="Eg: Frontend Developer" />
+        </div>
+
+        <div>
+          <textarea
+            name="description"
+            className="w-1/2 border rounded p-2"
+            placeholder="write a clear concise job description with responsibilites & expectations"
+          />
+        </div>
+
+        <div>
+            
+        </div>
+      </div>
     </main>
   );
 };
