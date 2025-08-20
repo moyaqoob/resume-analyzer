@@ -1,9 +1,15 @@
-import Image from "next/image";
+"use client";
+import { useUser } from "@auth0/nextjs-auth0";
+import { UploadPage } from "./components/upload-page";
+export default function Profile() {
+  const { user, isLoading } = useUser();
 
-export default function Home() {
+  if (isLoading) return <p>Loading...</p>;
+  if (!user) return <a href="/auth/login">Login</a>;
+
   return (
-    <div className="">
-     resume analyzer
+    <div>
+      <UploadPage/>
     </div>
   );
 }
